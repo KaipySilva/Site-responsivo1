@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: Roboto, sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(139, 223, 139);
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Sobre{
+    display: flex;
+    flex-direction: left;
+}
+
+.Sobre div{
+    padding:10px;
+}
+.Sobre h2, h3{
+    margin: 10px 10px;
+}
+
+.tenis ul{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    background-color: red;
+    width: 100%;
+}
+
+.tenis img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tenis li{
+    width: 100%;
+}
