@@ -5,17 +5,32 @@
     font-family: Roboto, sans-serif;
 }
 
+header{
+    background-color: cornflowerblue;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
 .container{
+    background-color: rgb(235, 239, 243);
+    padding-top: 50px;
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
-header{
-    background-color: rgb(139, 223, 139);
+.container h2{
+    border-bottom: 4px solid cornflowerblue;
+    margin-bottom: 40px;
 }
 
+
+
 header .container{
+    background-color: cornflowerblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +38,10 @@ header .container{
 
 .Sobre{
     display: flex;
-    flex-direction: left;
+}
+
+.Sobre h3{
+    margin-top: 42px;
 }
 
 .Sobre div{
@@ -33,11 +51,13 @@ header .container{
     margin: 10px 10px;
 }
 
+
+
 .tenis ul{
+    list-style: none;
     display: grid;
     grid-template-columns: repeat(4, 24.25%);
     column-gap: 1%;
-    background-color: red;
     width: 100%;
 }
 
@@ -49,4 +69,66 @@ header .container{
 
 .tenis li{
     width: 100%;
+}
+
+button{
+    font-size: 1em;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        max-width: 90%;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1em;
+    }
+    
+    .Sobre {
+        display: block;
+    }
+
+    .Sobre img {
+        width: 100%;
+    }
+
+    .tenis ul {
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+
+    .tenis ul li{
+        margin-bottom: 10%;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .container{
+        max-width: 90%;
+    }
+
+    header .container{
+        font-size: 1em;
+    }
+    
+    .Sobre {
+        display: block;
+    }
+
+    .Sobre img {
+        width: 100%;
+    }
+
+    .tenis ul {
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
+        padding: 10px;
+    }
 }
